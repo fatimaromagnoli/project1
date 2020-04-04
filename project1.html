@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.css">
+    <link rel="stylesheet" href="./project1.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.js"></script>
+    <script src="./project1.js"></script>
+</head>
+
+<body>
+    <nav><button id="nav1">Go Back</button>
+        <div id="filterButtons"><button id="nav2">Filter on Vegan</button><button id="nav3">Filter on
+                Vegetarian</button><button id="nav4">Filter on Alcohol free</button></div>
+    </nav>
+
+    <!-- <h5><strong>Recipe Generator</strong></h5> -->
+    <div class="input">
+        <h1>Recipes for New Year's Resolution</h1>
+        <h4>Ready to start eating healthier?</h4>
+
+        <div class="row grid-padding-large">
+            <div class="col s6">
+                <h6><strong>Help me find a recipe with the following ingredients:</strong></h6>
+            </div>
+            <div class="col s6"><input class="ing" type="text" placeholder="INGREDIENTS"></div>
+        </div>
+
+        <div class="row grid-padding-small">
+            <div class="col s6">
+                <h6><strong>Calories range (Kcal) (Per Serving):
+                    </strong>
+                    <h6>
+            </div>
+            <div class="col s6">
+                <div id="slider"></div>
+            </div>
+        </div>
+
+        <button id="submitButton" class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <!-- <i class="material-icons right">send</i> -->
+        </button>
+    </div>
+    <div class="recipeAndYoutubeOutput"></div>
+</body>
+
+</html>
